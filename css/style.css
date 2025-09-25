@@ -120,19 +120,14 @@ H E A D E R  - F I N I S H
 	margin: 0 auto;
 	border: 3px solid rgba(254, 209, 54, 1);
 	border-radius: 50%;
-	display: flex;
 	justify-content: center;
-	align-items: center;
 	padding: 17.45px;
-	box-sizing: border-box;
-	overflow: visible;
 }
 
 .svg-wrapper svg {
 	display: block;
 	width: 100%;
 	height: 100%;
-	border-radius: 0;
 }
 
 /* ------------------------
