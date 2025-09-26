@@ -6,7 +6,6 @@
 	--other-family: 'Bilbo Swash Caps', sans-serif;
 
 	/* КОЛЬОРИ */
-	--header-text: rgba(254, 209, 54, 1);
 	--services-title: rgba(34, 34, 34, 1);
 	--services-desc: rgba(119, 119, 119, 1);
 	--contact-title: rgba(255, 255, 255, 1);
@@ -21,9 +20,8 @@ V A R I A B L E S - F I N I S H
 body {
 	background-color: var(--contact-title);
 	font-family: var(--first-font);
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+	font-weight: 700;
+	font-size: 14px;
 }
 
 .container {
@@ -37,6 +35,7 @@ G L O B A L - F I N I S H
 
 .header {
 	padding-top: 44px;
+	font-weight: 400;
 }
 
 .header-container {
@@ -49,9 +48,8 @@ G L O B A L - F I N I S H
 	font-family: var(--other-family);
 	font-size: 36px;
 	line-height: 41px;
-	font-weight: 400;
 	letter-spacing: 1.3px;
-	color: var(--header-text);
+	color: var(--button-color);
 }
 
 .header-navigation-list {
@@ -60,10 +58,8 @@ G L O B A L - F I N I S H
 }
 
 .header-navigation-link {
-	color: var(--header-text);
-	font-size: 14px;
+	color: var(--button-color);
 	line-height: 41px;
-	font-weight: 400;
 	padding: 10px;
 }
 
@@ -80,7 +76,6 @@ H E A D E R  - F I N I S H
 
 .services-title {
 	font-size: 40px;
-	font-weight: 700;
 	line-height: 75px;
 	letter-spacing: -1px;
 	color: var(--services-title);
@@ -102,12 +97,10 @@ H E A D E R  - F I N I S H
 .services-subtitle {
 	font-size: 18px;
 	line-height: 75px;
-	font-weight: 700;
 	letter-spacing: -0.45px;
 }
 
 .services-description {
-	font-size: 14px;
 	font-weight: 400;
 	line-height: 100%;
 	font-family: var(--second-font);
@@ -118,7 +111,7 @@ H E A D E R  - F I N I S H
 	width: 100px;
 	height: 100px;
 	margin: 0 auto;
-	border: 3px solid rgba(254, 209, 54, 1);
+	border: 3px solid var(--button-color);
 	border-radius: 50%;
 	justify-content: center;
 	padding: 17.45px;
@@ -148,15 +141,20 @@ S E R V I C E S - F I N I S H
 
 .contact-title {
 	color: var(--contact-title);
-	padding-top: 92px;
+	padding: 0;
 	padding-bottom: 114px;
 	text-align: center;
 	font-size: 40px;
-	font-weight: 700;
 	letter-spacing: -1px;
 }
 
 .contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-container {
 	display: flex;
 	gap: 27px;
 	align-items: center;
@@ -176,51 +174,50 @@ S E R V I C E S - F I N I S H
 
 .contact-input {
 	color: var(--placeholder-color);
-	padding: 12px 310px 21px 20px;
-	font-size: 14px;
-	font-weight: 700;
+	padding: 12px 10px 21px 20px;
+	width: 455px;
 	letter-spacing: -0.35px;
 	border: 1px solid;
 	border-radius: 3px;
 	border-color: var(--placeholder-color);
+	font: inherit;
 }
 
 input::placeholder {
 	color: var(--placeholder-color);
-	color: var(--placeholder-color);
-	font-size: 14px;
-	font-weight: 700;
 	letter-spacing: -0.35px;
+	font: inherit;
 }
 
 .contact-textarea::placeholder {
-	font-size: 14px;
 	color: var(--placeholder-color);
 	letter-spacing: -0.35px;
-	font-weight: 700;
 	white-space: nowrap;
+	font: inherit;
 }
 
 .contact-textarea {
-	padding: 14px 22px 181px 22px;
+	padding: 14px 22px 22px 22px;
 	border: 1px solid;
 	border-color: var(--placeholder-color);
 	border-radius: 2px;
 	resize: none;
+	letter-spacing: -0.35px;
 	width: 472px;
 	height: 212px;
+	font: inherit;
+	color: var(--placeholder-color);
 }
 
 .send-button {
 	margin: 0 auto;
-	background-color: var(--header-text);
+	background-color: var(--button-color);
 	color: var(--contact-title);
 	font-size: 18px;
-	font-weight: 700;
 	letter-spacing: 0px;
 	padding: 18px 33px 28px 33px;
 	border: 0;
 	cursor: pointer;
 	margin-top: 27px;
+	font-weight: inherit;
 }
-
