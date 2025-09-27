@@ -1,9 +1,9 @@
 :root {
 	/* ФОНТИ */
 	--first-font: 'Montserrat', sans-serif;
-	--second-font: 'RobotoSlab', sans-serif;
-	--third-font: 'DroidSerif', sans-serif;
-	--other-family: 'Bilbo Swash Caps', sans-serif;
+	--second-font: 'Roboto Slab', sans-serif;
+	--third-font: 'Droid Serif', serif;
+	--other-family: 'Bilbo Swash Caps', cursive;
 
 	/* КОЛЬОРИ */
 	--services-title: rgba(34, 34, 34, 1);
@@ -14,14 +14,14 @@
 }
 
 /* ------------------------
-V A R I A B L E S - F I N I S H 
+GLOBAL
 ------------------------ */
-
 body {
 	background-color: var(--contact-title);
 	font-family: var(--first-font);
 	font-weight: 700;
 	font-size: 14px;
+	margin: 0;
 }
 
 .container {
@@ -30,9 +30,8 @@ body {
 }
 
 /* ------------------------
-G L O B A L - F I N I S H 
+HEADER
 ------------------------ */
-
 .header {
 	padding-top: 44px;
 	font-weight: 400;
@@ -64,14 +63,10 @@ G L O B A L - F I N I S H
 }
 
 /* ------------------------
-H E A D E R  - F I N I S H 
+SERVICES
 ------------------------ */
-
 .services {
-	padding-top: 109px;
-	padding-bottom: 119px;
-	padding-left: 4px;
-	padding-right: 4px;
+	padding: 109px 4px 119px 4px;
 }
 
 .services-title {
@@ -108,24 +103,36 @@ H E A D E R  - F I N I S H
 }
 
 .svg-wrapper {
-	width: 100px;
-	height: 100px;
+	width: 70px;
+	height: 69px;
 	margin: 0 auto;
 	border: 3px solid var(--button-color);
 	border-radius: 50%;
+	display: flex;
+	align-items: center;
 	justify-content: center;
-	padding: 17.45px;
 }
 
 .svg-wrapper svg {
-	display: block;
-	width: 100%;
-	height: 100%;
+	width: 38.5px;
+	height: 38px;
 }
 
 /* ------------------------
-S E R V I C E S - F I N I S H 
+CONTACT
 ------------------------ */
+.contact {
+	padding: 92px 0 115px 0;
+	background-color: var(--services-title);
+}
+
+.contact-title {
+	color: var(--contact-title);
+	font-size: 40px;
+	letter-spacing: -1px;
+	text-align: center;
+	padding-bottom: 114px;
+}
 
 .contact-container {
 	display: flex;
@@ -133,37 +140,22 @@ S E R V I C E S - F I N I S H
 	gap: 27px;
 }
 
-.contact {
-	padding-top: 92px;
-	padding-bottom: 115px;
-	background-color: var(--services-title);
-}
-
-.contact-title {
-	color: var(--contact-title);
-	padding: 0;
-	padding-bottom: 114px;
-	text-align: center;
-	font-size: 40px;
-	letter-spacing: -1px;
+.contact-wrapper {
+	display: flex;
+	justify-content: center;
 }
 
 .contact-form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 }
 
 .form-container {
 	display: flex;
 	gap: 27px;
-	align-items: center;
-}
-
-.contact-wrapper {
-	display: flex;
-	gap: 27px;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .contact-form-wrapper {
@@ -172,52 +164,43 @@ S E R V I C E S - F I N I S H
 	gap: 27px;
 }
 
-.contact-input {
+.contact-input,
+.contact-textarea {
+	font: inherit;
 	color: var(--placeholder-color);
+	border: 1px solid var(--placeholder-color);
+	border-radius: 3px;
+	letter-spacing: -0.35px;
+}
+
+.contact-input {
 	padding: 12px 10px 21px 20px;
 	width: 455px;
-	letter-spacing: -0.35px;
-	border: 1px solid;
-	border-radius: 3px;
-	border-color: var(--placeholder-color);
-	font: inherit;
-}
-
-input::placeholder {
-	color: var(--placeholder-color);
-	letter-spacing: -0.35px;
-	font: inherit;
-}
-
-.contact-textarea::placeholder {
-	color: var(--placeholder-color);
-	letter-spacing: -0.35px;
-	white-space: nowrap;
-	font: inherit;
 }
 
 .contact-textarea {
 	padding: 14px 22px 22px 22px;
-	border: 1px solid;
-	border-color: var(--placeholder-color);
+	width: 458px;
+	height: 212px;
 	border-radius: 2px;
 	resize: none;
-	letter-spacing: -0.35px;
-	width: 472px;
-	height: 212px;
-	font: inherit;
+	white-space: nowrap;
+}
+
+input::placeholder,
+.contact-textarea::placeholder {
 	color: var(--placeholder-color);
+	letter-spacing: -0.35px;
+	font: 700;
 }
 
 .send-button {
-	margin: 0 auto;
+	margin: 27px auto 0 auto;
 	background-color: var(--button-color);
 	color: var(--contact-title);
 	font-size: 18px;
-	letter-spacing: 0px;
 	padding: 18px 33px 28px 33px;
 	border: 0;
 	cursor: pointer;
-	margin-top: 27px;
-	font-weight: inherit;
+	font-weight: 700;
 }
