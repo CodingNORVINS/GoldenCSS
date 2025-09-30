@@ -21,7 +21,8 @@ body {
 	font-family: var(--first-font);
 	font-weight: 700;
 	font-size: 14px;
-	margin: 0;
+	letter-spacing: -0.35px;
+	color: var(--services-title);
 }
 
 .container {
@@ -66,14 +67,13 @@ HEADER
 SERVICES
 ------------------------ */
 .services {
-	padding: 109px 4px 119px 4px;
+	padding: 109px 0 119px 0;
 }
 
 .services-title {
 	font-size: 40px;
 	line-height: 75px;
 	letter-spacing: -1px;
-	color: var(--services-title);
 	text-align: center;
 	padding-bottom: 87.5px;
 }
@@ -93,11 +93,11 @@ SERVICES
 	font-size: 18px;
 	line-height: 75px;
 	letter-spacing: -0.45px;
+	color: var(--button-color);
 }
 
 .services-description {
 	font-weight: 400;
-	line-height: 100%;
 	font-family: var(--second-font);
 	color: var(--services-desc);
 }
@@ -137,19 +137,19 @@ CONTACT
 .contact-container {
 	display: flex;
 	flex-direction: column;
-	gap: 27px;
 }
 
-.contact-wrapper {
+/* .contact-wrapper {
 	display: flex;
 	justify-content: center;
-}
+} */
 
 .contact-form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	justify-content: center;
 }
 
 .form-container {
@@ -170,11 +170,10 @@ CONTACT
 	color: var(--placeholder-color);
 	border: 1px solid var(--placeholder-color);
 	border-radius: 3px;
-	letter-spacing: -0.35px;
 }
 
 .contact-input {
-	padding: 12px 10px 21px 20px;
+	padding: 12px 20px 21px 20px;
 	width: 455px;
 }
 
@@ -184,13 +183,11 @@ CONTACT
 	height: 212px;
 	border-radius: 2px;
 	resize: none;
-	white-space: nowrap;
 }
 
 input::placeholder,
 .contact-textarea::placeholder {
 	color: var(--placeholder-color);
-	letter-spacing: -0.35px;
 	font: 700;
 }
 
