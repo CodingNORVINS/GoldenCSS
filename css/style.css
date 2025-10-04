@@ -17,7 +17,6 @@
 GLOBAL
 ------------------------ */
 body {
-	background-color: var(--contact-title);
 	font-family: var(--first-font);
 	font-weight: 700;
 	font-size: 14px;
@@ -35,7 +34,6 @@ HEADER
 ------------------------ */
 .header {
 	padding-top: 44px;
-	font-weight: 400;
 }
 
 .header-container {
@@ -50,6 +48,7 @@ HEADER
 	line-height: 41px;
 	letter-spacing: 1.3px;
 	color: var(--button-color);
+	font-weight: 400;
 }
 
 .header-navigation-list {
@@ -61,6 +60,7 @@ HEADER
 	color: var(--button-color);
 	line-height: 41px;
 	padding: 10px;
+	font-weight: 400;
 }
 
 /* ------------------------
@@ -76,6 +76,7 @@ SERVICES
 	letter-spacing: -1px;
 	text-align: center;
 	padding-bottom: 87.5px;
+	color: var(--services-title);
 }
 
 .services-list {
@@ -93,7 +94,6 @@ SERVICES
 	font-size: 18px;
 	line-height: 75px;
 	letter-spacing: -0.45px;
-	color: var(--button-color);
 }
 
 .services-description {
@@ -200,4 +200,5 @@ input::placeholder,
 	border: 0;
 	cursor: pointer;
 	font-weight: 700;
+	font-family: var(--first-font);
 }
