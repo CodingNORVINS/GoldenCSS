@@ -102,20 +102,23 @@ SERVICES
 	color: var(--services-desc);
 }
 
-.svg-wrapper {
+/* .svg-wrapper {
+	fill: var(--button-color);
+	padding: 13px;
+	border: 3px solid var(--button-color);
+	border-radius: 100%;
 	width: 70px;
 	height: 69px;
 	margin: 0 auto;
+} */
+svg {
+	fill: var(--button-color);
+	padding: 13px;
 	border: 3px solid var(--button-color);
 	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.svg-wrapper svg {
-	width: 38.5px;
-	height: 38px;
+	width: 70px;
+	height: 69px;
+	margin: 0 auto;
 }
 
 /* ------------------------
